@@ -1,0 +1,31 @@
+{
+  "name": "chat-ai-api",
+  "version": "1.0.0",
+  "description": "backend for an ai chat application",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --noEmit && tsx --watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "author": "Divyansh",
+  "license": "ISC",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.43.1",
+    "express": "^5.1.0",
+    "openai": "^4.100.0",
+    "stream-chat": "^9.1.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.21",
+    "drizzle-kit": "^0.31.1",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
